@@ -20,6 +20,14 @@ examples and other information.
 
 *If you've never used DebOps or Ansible before, please refer to the "[Installation](https://github.com/carlalexander/debops-wordpress/wiki/Installation)" page of the wiki.*
 
+## post-installation
+
+```shell
+pip instal selinux netaddr
+```
+
+``` mv /home/thecreed/dev/ansible-roles/debops-wordpress/inventory/../secret/pki/realms/by-host/eslutsky.179.170.163.vultr.com/domain/ /home/thecreed/dev/ansible-roles/debops-wordpress/inventory/../secret/pki/realms/by-host/eslutsky.179.170.163.vultr.com/eslutsky.com```
+
 To create a "DebOps for WordPress" project, you just need to:
 
  1. Get a copy of this repo to your computer.

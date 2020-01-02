@@ -163,7 +163,7 @@
 
     - role: debops.nginx
       tags: [ 'role::nginx', 'skip::ngix' ]
-      nginx_acme: False
+      nginx_acme: True
       nginx_acme_root: '{{ wordpress__nginx__acme_root }}'
       nginx__default_servers: []
       nginx__default_upstreams: []

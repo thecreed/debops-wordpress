@@ -23,8 +23,8 @@ examples and other information.
 ## post-installation
 
 
-``` mv /home/thecreed/dev/ansible-roles/debops-wordpress/inventory/../secret/pki/realms/by-host/eslutsky.179.170.163.vultr.com/domain/ /home/thecreed/dev/ansible-roles/debops-wordpress/inventory/../secret/pki/realms/by-host/eslutsky.179.170.163.vultr.com/eslutsky.com```
-
+``` /bin/bash 
+mv /home/thecreed/dev/ansible-roles/debops-wordpress/inventory/../secret/pki/realms/by-host/eslutsky.179.170.163.vultr.com/domain/ /home/thecreed/dev/ansible-roles/debops-wordpress/inventory/../secret/pki/realms/by-host/eslutsky.179.170.163.vultr.com/eslutsky.com```
 
 ```
 
@@ -55,7 +55,6 @@ examples and other information.
 
 
 
-```
 To create a "DebOps for WordPress" project, you just need to:
 
  1. Get a copy of this repo to your computer.

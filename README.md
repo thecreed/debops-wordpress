@@ -22,12 +22,40 @@ examples and other information.
 
 ## post-installation
 
-```shell
-pip instal selinux netaddr
-```
 
 ``` mv /home/thecreed/dev/ansible-roles/debops-wordpress/inventory/../secret/pki/realms/by-host/eslutsky.179.170.163.vultr.com/domain/ /home/thecreed/dev/ansible-roles/debops-wordpress/inventory/../secret/pki/realms/by-host/eslutsky.179.170.163.vultr.com/eslutsky.com```
 
+
+```
+
+
+- on the host restart fpm:
+  ```
+  systemctl restart php7.2-fpm
+  ```
+
+## re-issue lets encrypts certificatates using ACME
+
+- on the host
+  ```
+  apt install python-minimal
+  rm -rf /etc/pki/realms/zohar-pc.co.il
+  ```
+
+- on the controller
+  ```
+  debops wordpress --tags role::pki
+  ```
+
+- on the host
+  ```
+  systemctl restart nginx
+  ```
+
+
+
+
+```
 To create a "DebOps for WordPress" project, you just need to:
 
  1. Get a copy of this repo to your computer.
